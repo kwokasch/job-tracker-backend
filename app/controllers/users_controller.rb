@@ -2,7 +2,7 @@ class UsersController < ApplicationController
     def index
         @users = User.all
 
-        render json: @users, include: :jobs
+        render json: @users, :include => [:job_trackers, :jobs]
     end
 
     def create
@@ -12,12 +12,11 @@ class UsersController < ApplicationController
     end
 
     def update
-        @user = User.find(user_params)
-        @user = user.update(user_params)
+        @user = User.update(user_params)
     end
 
     def destroy
-        @user = User.find_by(user_params)
+        @user = User.find_by(params[:id])
         @user.destroy
     end
 

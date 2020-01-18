@@ -2,7 +2,7 @@ class JobTrackersController < ApplicationController
     def index
         @job_trackers = JobTracker.all
 
-        render json: @job_trackers, include: job_notes
+        render json: @job_trackers, include: :job_notes
     end
 
     def show
