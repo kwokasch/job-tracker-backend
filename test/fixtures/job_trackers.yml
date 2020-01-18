@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: one
+  job_id: one
+  connections: MyString
+  applied: 2020-01-18
+  phone_screening: 2020-01-18
+  interview_1: 2020-01-18
+  interview_2: 2020-01-18
+  interview_3: 2020-01-18
+  interview_4: 2020-01-18
+
+two:
+  user_id: two
+  job_id: two
+  connections: MyString
+  applied: 2020-01-18
+  phone_screening: 2020-01-18
+  interview_1: 2020-01-18
+  interview_2: 2020-01-18
+  interview_3: 2020-01-18
+  interview_4: 2020-01-18
